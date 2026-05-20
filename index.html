@@ -2,28 +2,122 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mamon — Supercharge your workflow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Mamon</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">mamon</div>
-        <nav>
-            <a href="#">Products</a>
-            <a href="#">Solutions</a>
-            <a href="#">Pricing</a>
-            <a href="#">Resources</a>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="img/logo-decos.svg" alt="Mamon logo">
+                    <span>mamon</span>
+                </div>
+                <nav class="nav">
+                    <a href="#" class="nav-link">Products</a>
+                    <a href="#" class="nav-link">Solutions</a>
+                    <a href="#" class="nav-link">Pricing</a>
+                    <a href="#" class="nav-link">Resources</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Supercharge your workflow</h1>
-            <p>We're designed for modern product teams building ambitious things.</p>
-            <button class="btn">Get started</button>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Supercharge your workflow</h1>
+                    <p class="hero-description">We're designed for modern product teams building ambitious things.</p>
+                    <button class="btn btn-primary">Get started</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Built for modern product teams</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-bolt feature-icon"></i>
+                        <h3>Lightning fast</h3>
+                        <p>Supercharge your workflow with our powerful tools.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <h3>Secure by default</h3>
+                        <p>Enterprise-grade security you can trust.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-cloud-upload-alt feature-icon"></i>
+                        <h3>Cloud native</h3>
+                        <p>Built for the modern cloud era.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="container">
+                <h2 class="section-title">Trusted by leading teams</h2>
+                <div class="clients-grid">
+                    <img src="img/logo-lightspeed.svg" alt="Lightspeed">
+                    <img src="img/logo-hotelchamp.svg" alt="Hotelchamp">
+                    <img src="img/logo-tripadvisor.svg" alt="Tripadvisor">
+                    <img src="img/logo-shutterfly.svg" alt="Shutterfly">
+                    <img src="img/logo-sap.svg" alt="SAP">
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <h2 class="section-title">Meet our team</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <img src="img/Agneshka.svg" alt="Agneshka">
+                        <h3>Agneshka</h3>
+                        <p>Product Designer</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="img/Alex.svg" alt="Alex">
+                        <h3>Alex</h3>
+                        <p>Frontend Developer</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="img/Andrey.svg" alt="Andrey">
+                        <h3>Andrey</h3>
+                        <p>Backend Developer</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="img/Artyom.svg" alt="Artyom">
+                        <h3>Artyom</h3>
+                        <p>DevOps Engineer</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="img/logo-decos.svg" alt="Mamon logo">
+                    <span>mamon</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

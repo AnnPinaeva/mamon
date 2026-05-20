@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamon.pro — услуги для бизнеса</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <span style="font-weight: 700; font-size: 24px; color: #667eea;">MAMON</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Поможем вашему бизнесу <span class="highlight">расти быстрее</span></h1>
+                <p>Создаём эффективные стратегии продвижения, разрабатываем сайты и приложения, которые приносят реальные результаты.</p>
+                <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Что мы предлагаем</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Маркетинг</h3>
+                    <p>Разработка стратегии продвижения, анализ конкурентов, настройка рекламы.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Разработка</h3>
+                    <p>Создание сайтов, интернет-магазинов, мобильных приложений под ключ.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Дизайн</h3>
+                    <p>Уникальный дизайн сайтов, логотипов, фирменного стиля.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO оптимизация</h3>
+                    <p>Продвижение сайта в поисковых системах, увеличение трафика.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Почему выбирают нас</h2>
+                    <p>Мы работаем с 2015 года и за это время реализовали более 200 успешных проектов. Наша команда — это профессионалы с опытом работы в топовых IT-компаниях.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Индивидуальный подход к каждому клиенту</li>
+                        <li><i class="fas fa-check-circle"></i> Прозрачная система отчётности</li>
+                        <li><i class="fas fa-check-circle"></i> Гарантия качества и соблюдение сроков</li>
+                        <li><i class="fas fa-check-circle"></i> Поддержка 24/7 после сдачи проекта</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="number">200+</span>
+                        <span class="label">Проектов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">50+</span>
+                        <span class="label">Сотрудников</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">5 лет</span>
+                        <span class="label">На рынке</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Ваш Email" required>
+                    <textarea placeholder="Сообщение" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> info@mamon.pro</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fab fa-telegram"></i> @mamon_pro</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mamon.pro. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
